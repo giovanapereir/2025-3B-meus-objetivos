@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --fonte-primaria: "Boldonse", system-ui;
+    --fonte-secundaria: "Open Sans", sans-serif;
+    --azul-escuro: #03045eff;
+    --azul-claro: #0077b6ff;
+    --verde-agua: #00b4d8ff;
+    --azul-bebe: #90e0efff;
+    --branco: #ffffff;
+    --preto:#000000;
+
+}
+
+body{
+    background-color: var(--azul-bebe);
+    color: var(--preto);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    font-family: var(--fonte-secundaria);
+    text-align: left;
+    width: 100%;
+font-size: 36px;
+}
+
+.botao{
+    font-family: var(--fonte-primaria);
+    background-color: var(--azul-claro);
+    color: var(--preto);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--azul-escuro);
+    border-left: 4px solid var(--azul-escuro);
+    border-right: 4px solid var(--azul-escuro);
+    border-top: none;
+}screen
+
+.botoes{
+    display: block;
+}
+ .botao:first-child{
+    border-radius: 40px 40px 0 0;
+ }
+
+ .botao:last-child{
+    border-radius: 0 0 40px 40px;
+ }
+
+ .botao.ativo{
+    background-color: var(--azul-claro);
+    border-bottom: var(--azul-escuro);
+    color: var(--branco)
+ }
+ .abas-textos{
+    background-color: var(--azul-claro);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+ }
+
+ .aba-conteudo.ativo{
+    display: block;
+ }
+
+ .aba-conteudo{
+    display: none;
+ }
+
+ .aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+ }
+
+ .aba-conteudo-titulo-secundario{
+    text-align: center;
+    color:var(--azul-escuro)
+ }
+ @media screen  and(min-whidth: 768px){
+.botoes{
+    display: flex;
+}  
+.botao:first-child{
+    border-radius: 40px 0 0 0;
+}  
+.botao:last-child{
+    border-radius: 0 40px 0 0;
+}
+ }
