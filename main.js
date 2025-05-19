@@ -3,7 +3,7 @@ const botoes = document.querySelectorAll(".botao");
 const textos = document.querySelectorAll(".aba-conteudo");
 const contadores = document.querySelectorAll(".contador");
 
-const tempoObjetivo01 = new Date("2025-:00:00");
+const tempoObjetivo01 = new Date("2025-03:00:00");
 const tempoObjetivo02 = new Date("2029-06-11T00:00:00");
 const tempoObjetivo03 = new Date("2026-08-11T00:00:00");
 const tempoObjetivo04 = new Date("2025-09-12T00:00:00");
